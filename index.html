@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking</title>
+</head>
+<body>
+
+    <!---------------- HEADER SECTION -------------------------->
+    <section class="header">
+        <div class="navbar">
+            <nav>
+                <a href="#">Hjem</a>
+                <a href="#">Kafé</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Topical page</a>
+            </nav>
+        </div>
+        <div class="container">
+        <div class="header-text">
+            <h1>Gode opplevelser i fine lokaler</h1>
+            <p>Ønsker du å feire en spesiell begivenhet?</p>
+     </div>
+ </div>
+</section>
+<div class="credit"><p>Bilde av Life Of Pix</p></div>
+
+<!--------------------- ABOUT SECTION -------------------------->
+<section class="about">
+        <h1>Utleie av vårt lokale</h1> 
+            <hr class="line">
+             <p>OsloMet Kafé & Restaurant ligger midt på Pilestredet i Oslo. 
+            Restauranten strekker seg over to etasjer, og har plass til rundt 100 gjester inne. 
+            Hos oss kan du booke begge etasjene til større selskap, eller én etasje om du vil arrangere et mindre privat selskap.
+             Begge etasjene er utstyrt med egen bar og lounge, med en hyggelig atmosfære. 
+            Lokalet er perfekt for de som ønsker å arrangere et selskap med et skreddersydd opplegg.
+             </p> <p class="welcome">Velkommen til oss!</p>
+            <div id="link">
+            <a href="#reservation-section">Trykk her for å booke</a>
+        </div>
+</section>
+
+<!--------------------   PICTURE SECTION  ---------------------------------->
+
+<section class="picturerow">
+        <div class="pictures">
+            <img src="/bilder/bilde1.jpg" alt="skål" width="100%;">
+            <div class="credit"><p1>Bilde av Pavel Danilyuk</p1>
+        </div>  
+    </div>
+        <div class="pictures">
+            <img src="/bilder/bilde2.jpg" alt="selskap" width="100%">
+            <div class="credit"><p1>Bilde av Helena Lopes</p1>
+            </div> 
+        </div>
+    <div class="pictures">
+            <img src="/bilder/bilde3.jpg" alt="mat" width="100%">
+            <div class="credit"><p1>Bilde av ELEVATE</p1>
+    </div>
+</section>
+    <hr class="line2">
+
+
+<!------------KILDER TIL BILDENE ----------------->
+ 
+<!---- Photo by Pavel Danilyuk: https://www.pexels.com/photo/people-holding-a-glass-of-wine-at-the-table-8775397/ 
+Photo by Helena Lopes: https://www.pexels.com/photo/people-drinking-liquor-and-talking-on-dining-table-close-up-photo-696218/ 
+Photo by ELEVATE: https://www.pexels.com/photo/chef-preparing-vegetable-dish-on-tree-slab-1267320/ -->
+
+
+<!-----------------------------------------CONTACT SECTION  ------------------------------------------->
+
+<section class="contact-headline">
+        <h1 class="headline">Kontakt oss</h1>
+    <div class="contact">
+        <div class="house">
+            <img src="/bilder/home-address.png" alt="home icon">
+            <h1>Adresse</h1>
+            <p1>Pilestredet 35</p1>
+        </div>
+
+        <div class="telephone">
+            <img src="/bilder/smartphone.png" alt="phone icon">
+            <h1>Telefon</h1>
+            <p>12345678</p1>
+            </div>
+
+        <div class="mail">
+            <img src="/bilder/email.png" alt="email">
+            <h1>Mail</h1>
+            <p>booking@oslomet.no</p>
+        </div>
+    </section>
+
+<div id="ikoner">
+<a href="https://www.flaticon.com/free-icons/telephone" title="telephone icons">Telephone icons created by HAJICON - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/address" title="address icons">Address icons created by Vectors Tank - Flaticon</a>
+</div>
+
+<!------------------------KILDE TIL IKONER------------------------------->
+<!--- https://www.flaticon.com/free-icons/telephone
+https://www.flaticon.com/free-icons/email
+https://www.flaticon.com/free-icons/address  --->
+
+
+
+
+
+
+<!------------------ RESERVATION FORM SECTION -------------------->
+
+
+<div id="reservation-section">
+        <div class="reservation">
+            <h1>Reserver her</h1>
+        <form action="#">
+        <p>Navn</p>
+        <input type="text" id="fname" name="firstname" placeholder="Navn">
+        
+        <p>E-postadresse</p>
+        <input type="text" id="mail" name="email" placeholder="E-postadresse">
+    
+        
+        <p>Dato</p>
+        <input type="date" name="dato"/>
+        
+
+        
+        <p>Hvor stort selskap?</p>
+        <select name="antall">
+            <option value="Velg antall">Velg antall</option>
+            <option value="10-20">10-20</option>
+            <option value="20-30">20-30</option>
+            <option value="30-40">30-40</option>
+            <option value="40-50">40-50</option>
+            <option value="50-60">50-60</option>
+            <option value="60-70">60-70</option>
+            <option value="70-80">70-80</option>
+            <option value="80-90">80-90</option>
+            <option value="90-100">90-100</option>
+         </select>
+
+        
+        <p>Annet</p>
+        <textarea id="comments" rows="4" cols="30">Andre kommentarer..</textarea>
+    
+
+        <div id="button">
+        <button class="button">Send reservasjon</button>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+<!------------------ OPENING HOURS SECTION -------------------->
+
+    <section class="openingsection">
+    <div class="openinghours">
+        <img src="/bilder/clock.png" alt="clock">
+        <h1>Åpningstider</h1>
+        <p class="days">Mandag - fredag</p><p class="hours">14.00 - 23.00</p>
+        <p class="days">Lørdag og søndag</p>
+        <p class="hours">14.00 - 01.00</p>
+      
+    </section>
+
+<div id="clock">
+  <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by Those Icons - Flaticon</a>
+</div>
+
+
+<!------------------------KILDE TIL IKON------------------------------->
+<!-- https://www.flaticon.com/free-icons/clock -->
+
+
+</body>
+</html>
