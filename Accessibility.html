@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body class="access">
+  <!-- NAVBAR -->
+    <div class="navbar">
+        <nav>
+          <a href="kafe.html">Kafé</a>
+          <a href="booking.html">Booking</a>
+          <a href="Accessibility.html">Accessibility</a>
+          <a href="topical.html">Topical page</a>
+          <a href="index.html">Hjem</a>
+        </nav>
+      </div>
+
+      <div class="bilde-credit-acc">
+        <p>© Shailendra Yadav, Pinterest</p>
+        <!-- Bakgrunnsbilde tatt fra https://pin.it/5u9xj8Q -->
+    </div> 
+
+      <div class="container">
+    <div id="text">
+        <h1 id="header">Accessibility test</h1> <!--Tittel-->
+
+        <p> <!--Paragraf-->
+          Før vi tok en "automated test" så tok vi noen egne steg for å gjøre sidene våre så "accessible" som mulig. 
+          Dette gjorde vi ved å blant annet bevisst velge en skrifttype som var lett forståelig og uproblematisk å lese. 
+          I tillegg til det prøvde vi å bruke et begrenset antall farger på sidene, på overskrifter og på selve layouten, slik at det ikke skulle skape vansker for folk med fargeblindhet. 
+          Vi prøvde å lage designet simpelt og lett å navigere, slik at det ikke skulle oppstå forvirring for brukeren i hvor man trykket, og hvordan man kom seg til andre sider. 
+          Vi gjorde også vårt beste for å bruke riktige "tags"i html-filene for å skape en lettlest, ryddig kode. W3schools var til stor hjelp på mange fronter. 
+        </p>
+ <br> 
+<p> 
+  Etter å ha skrevet koden kjørte vi alle en "automated test" på sidene, og vi gjorde dette med hjelp av nettsiden  <a href="https://wave.webaim.org/.">WAVE Web Accessibility Evaluation Tools.</a>  
+  Ved å laste det ned som chrome extension kunne vi raskt få oversikt over feilene programmet tok opp, og hvilke endringer vi kunne gjøre for å få det mer "accessible". 
+  Programmet sendte oss blant annet noen tilbakemeldinger på designfeil, og klaget litt på dårlig kontrast mellom header-bilde og skriften på bildet. 
+  Dette løste vi ved legge en skygge over hele bildet, noe som både dempet bakgrunnen samt framhevet teksten. 
+  Vi fikk også varsler om at bilder manglet alternativ tekst, altså en slags backup tekst som forklarer hva som er på bilde, dersom bilde ikke skulle vises. 
+  Dette fikk vi også lagt til der det ble etterspurt. Noen sider fikk flere klager enn andre, og vi gjorde vårt beste for å fikse feilene de pekte ut. 
+  Enkelte problemer ble løst ved å endre tags, for eksempel på kafé forsvant erroren ved at vi byttet en < p > tag til < i >. 
+  Likevel var det vanskelig å fullt ut tilfredsstille alle kravene testen ba om, fordi den ble ikke alltid fornøyd selv når vi gjorde justeringene den ba om. For eksempel, etter vi hadde skyggelagt header-bilde som nevnt tidligere, fortsatte den å klage. 
+  Vi følte at testen kunne være litt i overkant streng på visse områder, så selv om den klager på småting på de ferdige sidene, hadde vi gjort vårt beste for å imøtekomme kravene, og "svekke" de små svakhetene testen hevdet vi hadde. 
+  Alt i alt synes vi at vi har laget fire fine, tilfredsstillende sider som er både accessible og responsive over flere enheter.     
+</p>  
+<hr>
+        <div class="row">
+            <div class="column">
+                <img src="bilder/bookingtest.jpg" style="max-width:100%;height:auto;">
+              </div>
+              <div class="column">
+                <img src="bilder/hometest.jpg" style="max-width:100%;height:auto;">
+              </div>
+              <div class="column">
+                <img src="bilder/kafetest2.jpg" style="max-width:100%;height:auto;">
+              </div>
+              <div class="column">
+                <img src="Bilder/topicaltest2.jpg" style="max-width:100%;height:auto;">
+            </div>
+        </div>  
+
+    </div>
+   </div>
+</body>
+</html>

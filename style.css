@@ -1,4 +1,4 @@
-/*hjemmesiden*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap');
@@ -15,6 +15,12 @@ html {
     font-size: 18px;
 }
 
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url('./bilder/welcome.jpg') no-repeat center / cover ;
+    color: white;
+}
 
 .navbar {
     display: flex;
@@ -107,73 +113,58 @@ html {
 }
 
 
-
-
-/*topical siden*/
-
-/*gjør siden responsive og fører til at skjermen tilpasser uliker skjermer. */
-@media all and (min-width: 100px) { 
-    html  {
-       
-        background: url('/bilder/topical.jpg') no-repeat center / cover ;
-        font-size: small;
-        color: white;
-      }
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
     }
-      @media all and (min-width: 800px) { 
-        html  {
-            background-image: url(/bilder/topical.jpg);
-            
-          }
-      
 
-p{ /*sørger for at paragraf skriften skal ha liten skrift*/
-    font-size: small;
 }
-/*gjør også siden responsive og fører til at skjermen tilpasser uliker skjermer. */
 
+/* Accessibility page*/
 
-/*endrer på plasseringen av teksten*/
+/*flyttet overskrift til midten*/
+#header{
+    text-align: center;
+}
+
+/* teksten*/
 .container #text {
-    margin-top: 20px;
-}
-/*h1 tittel får en høyre plassering*/
-h1{
-    float: right;
-}
-
-/* en footer med diverse justeringer*/
-.footer{
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000d1a;
-  color: white;
-  text-align: center;
+margin-top: 30px;
+margin-bottom: auto;
+    text-align: left;
+    font-size: medium;
 }
 
-.topical{ /* class gitt bakgrunnsbilde for å gjøre eventuelle justeringer*/
+/* bakgrunnsbilde */
+.access{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url('/bilder/topical.jpg') no-repeat center / cover ;
+    background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url("bilder/whiteb.jpg") no-repeat center / cover ;
     color: white;
-    /*  bilde hentet fra https://wallpaperaccess.com/4k-tech*/
 }
 
+/* bildene i en rad to og to*/
+.column {
+    float: left;
+    width: 50%;
+    padding: 7px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  } 
+  /* for at bildene er under hverandre på mobil*/
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
 
-.teknologi{  /*gitt class til det ene bilde for å gjøre kun justeringer på det*/
-    float: right;
-    margin-right: 20%;
-}
-
-.footer a {
-    color: white; /*gir hyperlenkene i footeren en hvit farge framfor blå, for å skape en god kontrast*/
-}
-
-
-
-.science { /*gitt class til det ene bilde for å gjøre kun justeringer på det*/
-    float: right;
-    margin-right: 20%;
-}
-}
+  /*bilde credit*/
+  .bilde-credit-acc{
+    float: left;
+    font-size: medium;
+    
+  }
