@@ -15,12 +15,6 @@ html {
     font-size: 18px;
 }
 
-#hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url('./bilder/welcome.jpg') no-repeat center / cover ;
-    color: white;
-}
 
 .navbar {
     display: flex;
@@ -113,25 +107,35 @@ html {
 }
 
 
-@media only screen and (max-width: 768px) { 
-    html {
-        font-size: 10px;
-    }
 
-}
 
 /*topical siden*/
-p{
+
+/*gjør siden responsive og fører til at skjermen tilpasser uliker skjermer. */
+@media all and (min-width: 800px) { 
+    .topical {
+    font-size: 10px;
+    background-image: url(/bilder/topical.jpg)
+
+}
+
+
+p{ /*sørger for at paragraf skriften skal ha liten skrift*/
     font-size: small;
 }
+/*gjør også siden responsive og fører til at skjermen tilpasser uliker skjermer. */
 
+
+/*endrer på plasseringen av teksten*/
 .container #text {
-    margin-top: 150px;
+    margin-top: 20px;
 }
-
+/*h1 tittel får en høyre plassering*/
 h1{
     float: right;
 }
+
+/* en footer med diverse justeringer*/
 .footer{
   left: 0;
   bottom: 0;
@@ -141,16 +145,28 @@ h1{
   text-align: center;
 }
 
-.topical{
+.topical{ /* class gitt bakgrunnsbilde for å gjøre eventuelle justeringer*/
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)), url('/bilder/topical.jpg') no-repeat center / cover ;
     color: white;
+    /*  bilde hentet fra https://wallpaperaccess.com/4k-tech*/
 }
 
 
-.teknologi{  /*class laget for å justere på bildet*/
+.teknologi{  /*gitt class til det ene bilde for å gjøre kun justeringer på det*/
     float: right;
-    margin-top: 20px;
+    margin-right: 20%;
 }
-   
+
+.footer a {
+    color: white; /*gir hyperlenkene i footeren en hvit farge framfor blå, for å skape en god kontrast*/
+}
+
+
+
+.science { /*gitt class til det ene bilde for å gjøre kun justeringer på det*/
+    float: right;
+    margin-right: 20%;
+}
+}
