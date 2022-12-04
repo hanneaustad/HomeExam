@@ -112,13 +112,20 @@ html {
 /*topical siden*/
 
 /*gjør siden responsive og fører til at skjermen tilpasser uliker skjermer. */
-@media all and (min-width: 800px) { 
-    .topical {
-    font-size: 10px;
-    background-image: url(/bilder/topical.jpg)
-
-}
-
+@media all and (min-width: 100px) { 
+    html  {
+       
+        background: url('/bilder/topical.jpg') no-repeat center / cover ;
+        font-size: small;
+        color: white;
+      }
+    }
+      @media all and (min-width: 800px) { 
+        html  {
+            background-image: url(/bilder/topical.jpg);
+            
+          }
+      
 
 p{ /*sørger for at paragraf skriften skal ha liten skrift*/
     font-size: small;
