@@ -1,0 +1,185 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+}
+
+html {
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+/* Ikke jeg som har laget denne, brukte navbar som ble lagd til forsiden*/
+.navbar {
+    display: flex; 
+    margin: right auto;
+    float: right;
+    }
+
+    .navbar nav {
+        display: block;
+        padding-right: 12px;
+    } 
+
+    .navbar a {
+        color: rgb(0, 0, 0);
+        font-size: 0.9rem;
+        font-weight: bold; 
+        text-decoration: none;
+        line-height: 60px;
+        padding: 0.4em 0.9em;
+        border: 2px solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        margin: 9px;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .navbar a:hover {
+        color:black;
+        background: rgb(177, 108, 77);
+        border-color: black;
+    }
+
+/* Tilpasser banner størrelsen til hele sidebredden */
+.banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Setter banner teksten (bildeinfo) til venstre og justerer tekststørrelsen*/
+.banner p{
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/* Setter menyen til flex, liner opp boksene så de har samme bredde, 
+justerer mellomrommet mellom boksene, setter retningen til hvordan flexboxene skal stackes, 
+og sentrer innholdet */
+.container2{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Setter font-størrelse på overskriftene */
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+/* Setter bakgrunnsfargen, padding, sentrerer teksten og tekststørrelsen
+ på flexboxene som holder selve rettene i menyen*/
+.flex-item{
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Sentrerer teksten og gjør at flexboxen dekker hele side-bredden 
+på flexboxene som inneholder overskrift og allergener */
+.full-width{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+/* Setter bakgrunnsfargen, tekstfargen (untatt linkene) og paddingen i footeren*/
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 4rem 1rem;
+}
+
+/* Setter tekstfargen til linkene, fjerner linjen under linkene og gjør at fargen som kommer
+når man hovrer over linken fader inn og ut */
+footer a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Setter fargen på linkene når man holder musepekeren over*/
+footer a:hover{
+    color:  #06e;
+}
+
+/* Setter maksbredden og sentrerer innholdet i footeren*/
+.container3{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Setter innholdet i footeren til flexboxer og gjør at bunnen av footeren går lenger ned*/
+.footer-main{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+/* Justerer hvordan de 2 flexboxene oppfører seg ved siden av hverandre, sørger for at 
+kollonnenene utvider seg til samme størrelse og sentrer teksten*/
+.footer-column{
+    flex-basis: 200px; 
+    flex-grow: 1;    
+    text-align: center;
+}
+
+/* Setter tekststørrelsen på overskriftene og avstanden fra overskriftene til innholdet */
+.footer-heading{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Plasserer linkene under hverandre, gjør at linkene kan utvide seg til bredden av flexboxen, 
+justerer avstanden mellom linkene, hvordan de skal ligge i forhold til hverande 
+og justerer tekststørrelsen
+*/
+.footer-link{
+    display: block; 
+    width: max-content;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* Setter tekststørrelsen for selve åpningstidene*/
+.footer-åpningstid{
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    /* Gjør at innholdet i flexboxene legger seg i kolonner når skjermen blir smalere*/
+    .footer-main{
+        flex-direction: column;
+    }
+    
+}
+
